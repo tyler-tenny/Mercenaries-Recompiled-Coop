@@ -75,6 +75,7 @@ set(GAME_SOURCES
     src/dev_missions.c
     src/dev_overlay.c
     src/free_cam.c
+    src/coop_net.c
     src/shader_warmup.c
     ${SHADER_WARMUP_HEADER}
 )
@@ -117,6 +118,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     dxguid
     xinput
     winmm
+    ws2_32
 )
 
 # MSVC-specific: large address aware, increase section limit for big generated files

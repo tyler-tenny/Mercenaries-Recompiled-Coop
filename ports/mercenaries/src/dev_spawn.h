@@ -281,6 +281,8 @@ static int dev_test_take_spawn(unsigned *index)
     xbox_preview_log_event("dev-test-request", "sequence=%lu rejected unknown template=%s", sequence, name);
     return 0;
 }
+void recomp_coop_tick(void);
+
 void recomp_dev_spawn_tick(void)
 {
     static int executing;
@@ -288,6 +290,7 @@ void recomp_dev_spawn_tick(void)
     if(executing)return;
     recomp_dev_battle_refresh_player();
     recomp_dev_relations_tick();
+    recomp_coop_tick();
     if(!recomp_dev_take_spawn(&index)&&!dev_test_take_spawn(&index))return;
     if(index==0x7fffffffu){dev_inspect_spawn();return;}
     unsigned troop=(index&DEV_SPAWN_TROOP)!=0, crew=(index>>DEV_SPAWN_CREW_SHIFT)&3u;

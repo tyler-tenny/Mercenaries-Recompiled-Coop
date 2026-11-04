@@ -3388,6 +3388,7 @@ float recomp_options_camera_fov(uint32_t camera, float fov)
 }
 
 #include "dev_spawn.h"
+#include "coop_puppet.h"
 #include "dev_battle_guest.h"
 #include "dev_factions_guest.h"
 #include "dev_mission_guest.h"
