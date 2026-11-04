@@ -1,3 +1,7 @@
+**Fork:** This is an unofficial fork of [Mercenaries Recompiled](https://github.com/KraftMacAndChee/Mercenaries-Recompiled)
+by KraftMacAndChee that adds an early co-op prototype. Not affiliated with or endorsed by
+the original author.
+
 # Mercenaries Recompiled
 
 DISCLAIMER: This project utilized a hybrid-workflow and iterative development.
